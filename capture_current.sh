@@ -2,13 +2,18 @@
 
 SHELL=/bin/sh PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
+# sudo apt get install imagemagick ffmpeg
+
 # update the 192.168.1.XXX IP to match the IP of your configured ESP32-cam
 
 for ((i=0;i<3;i++)); do
 	wget http://192.168.1.XXX/capture -O /home/pi/Timelapse/tl_weather_`date +%Y-%m-%d_%H-%M-%S`.jpg
 
+# most recent captures photo
 latest=$(ls /home/pi/Timelapse/tl_weather_*.jpg -rt1 | tail -1)
+# and it's filename
 Watermarktext=$(ls /home/pi/Timelapse/tl_weather_*.jpg -rt1 | tail -1 | grep -o -e 'tl_weather_.*$')
+# cut out the hour
 Watermarklarge=$(ls /home/pi/Timelapse/tl_weather_*.jpg -rt1 | tail -1 | grep -o -e 'tl_weather_.*$' | rev|cut -c11-12|rev)
 
 ps=$(wc -c <"$latest")
