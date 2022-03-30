@@ -5,7 +5,7 @@ command && echo "OK"
 command || echo "NOT OK"
 command && echo "OK" || echo "NOT OK"
 
-if command; then
+if command; then <br />
   echo "OK"
 else
   echo "NOT OK"
