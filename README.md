@@ -1,12 +1,13 @@
 # BASH
-*basic syntax cheatsheet*
+*basic syntax cheatsheet* <br />
 
-command && echo "OK"
-command || echo "NOT OK"
-command && echo "OK" || echo "NOT OK"
+command && echo "OK" <br />
+command || echo "NOT OK" <br />
+command && echo "OK" || echo "NOT OK" <br />
 
 if command; then <br />
-  echo "OK"
-else
-  echo "NOT OK"
-fi
+&nbsp;&nbsp;&nbsp;&nbsp; echo "OK" <br />
+else<br />
+&nbsp;&nbsp;&nbsp;&nbsp; echo "NOT OK"
+fi <br />
+<br />
