@@ -1,2 +1,2 @@
-#BASH SCRIPTS
-* few scripts that help out automating several processes *
+#BASHSCRIPTS
+* scripts that help automate the boring stuff *
